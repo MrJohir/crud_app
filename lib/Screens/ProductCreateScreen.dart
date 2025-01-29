@@ -133,7 +133,11 @@ class _ProductCreateScreenState extends State<ProductCreateScreen> {
                               style: appButtonStyle(),
                               onPressed: () {
                                 formOnSubmit();
-                                Navigator.push(context, MaterialPageRoute(builder: (builder)=>ProductGridViewScreen()));
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (builder) =>
+                                            ProductGridViewScreen()));
                               },
                               child: buttonChildStyle('Submit'),
                             )
